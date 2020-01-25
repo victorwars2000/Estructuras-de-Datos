@@ -1,26 +1,3 @@
-/*============================================================================
-Name        : LinkedList.java
-Author      : Eric Swanson
-Date	    : Sep 7, 2011
-Version     :
-Description :
-Copyright (C) 2011 netherwolfe
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
-
-  Some modifications added by Joel  2020-01-12
-  Modificaciones agregados por Eusebio Ajas 2020-01-19
-============================================================================*/
 package ListaEnlazadaSimple;
 
 public class LinkedList {

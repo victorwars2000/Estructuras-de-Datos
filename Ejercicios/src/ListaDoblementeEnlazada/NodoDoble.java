@@ -1,45 +1,45 @@
 package ListaDoblementeEnlazada;
 
-public class NodoDoble<T extends Comparable<T>> {
-    private T coeficiente;
-    private T exponente;
-    private NodoDoble<T> siguiente;
-    private NodoDoble<T> anterior;
+public class NodoDoble {
+    private int coeficiente;
+    private int exponente;
+    private NodoDoble siguiente;
+    private NodoDoble anterior;
 
-    public NodoDoble(T coeficiente, T exponente) {
+    public NodoDoble(int coeficiente, int exponente) {
         this.coeficiente = coeficiente;
         this.exponente = exponente;
     }
 
-    public T getCoeficiente() {
+    public int getCoeficiente() {
         return coeficiente;
     }
 
-    public void setCoeficiente(T coeficiente) {
+    public void setCoeficiente(int coeficiente) {
         this.coeficiente = coeficiente;
     }
 
-    public NodoDoble<T> getAnterior() {
+    public NodoDoble getAnterior() {
         return anterior;
     }
 
-    public void setAnterior(NodoDoble<T> anterior) {
+    public void setAnterior(NodoDoble anterior) {
         this.anterior = anterior;
     }
 
-    public NodoDoble<T> getSiguiente() {
+    public NodoDoble getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(NodoDoble<T> siguiente) {
+    public void setSiguiente(NodoDoble siguiente) {
         this.siguiente = siguiente;
     }
 
-    public T getExponente() {
+    public int getExponente() {
         return exponente;
     }
 
-    public void setExponente(T exponente) {
+    public void setExponente(int exponente) {
         this.exponente = exponente;
     }
 }

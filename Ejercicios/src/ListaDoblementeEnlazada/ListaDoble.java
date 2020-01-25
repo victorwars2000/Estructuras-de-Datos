@@ -1,14 +1,14 @@
 package ListaDoblementeEnlazada;
 
-public class ListaDoble<T extends Comparable<T>> {
+public class ListaDoble{
 
-    private NodoDoble<T> cabeza;
-    private NodoDoble<T> cola;
+    private NodoDoble cabeza;
+    private NodoDoble cola;
     private int numNodos;
 
-    public void agregatAlInicio(T coeficiente, T exponente) {
+    public void agregatAlInicio(int coeficiente, int exponente) {
 
-        NodoDoble<T> nvoNodo = new NodoDoble<>(coeficiente, exponente);
+        NodoDoble nvoNodo = new NodoDoble(coeficiente, exponente);
         if (cabeza == null) {
             cabeza = nvoNodo;
             cola = nvoNodo;
@@ -16,14 +16,13 @@ public class ListaDoble<T extends Comparable<T>> {
             cabeza.setAnterior(nvoNodo);
             nvoNodo.setSiguiente(cabeza);
             cabeza = nvoNodo;
-
         }
         numNodos++;
     }
 
-    public void agregarAlFinal(T coeficiente, T exponente) {
+    public void agregarAlFinal(int coeficiente, int exponente) {
 
-        NodoDoble<T> nvoNodo = new NodoDoble<>(coeficiente, exponente);
+        NodoDoble nvoNodo = new NodoDoble(coeficiente, exponente);
         if (cola == null) {
             cabeza = nvoNodo;
             cola = nvoNodo;
@@ -35,14 +34,14 @@ public class ListaDoble<T extends Comparable<T>> {
         }
     }
 
-    public void agregarEnUnIndice(int indice, T coeficiente, T exponente) {
+    public void agregarEnUnIndice(int indice, int coeficiente, int exponente) {
 
         if (indice < 1 || indice > numNodos) System.out.println("EL indice fuera de rango");
         else {
-            NodoDoble<T> nvoNodo = new NodoDoble<>(coeficiente, exponente);
+            NodoDoble nvoNodo = new NodoDoble(coeficiente, exponente);
             int contador = 1;
-            NodoDoble<T> actual = cabeza;
-            NodoDoble<T> anterior = null;
+            NodoDoble actual = cabeza;
+            NodoDoble anterior = null;
             while (actual != null && contador < indice) {
                 anterior = actual;
                 actual = actual.getSiguiente();
@@ -61,18 +60,18 @@ public class ListaDoble<T extends Comparable<T>> {
         }
     }
 
-    public void agregarOrdenado(T coeficiente, T exponente) {
+    public void agregarOrdenado(int coeficiente, int exponente) {
 
-        NodoDoble<T> nvoNodo = new NodoDoble<>(coeficiente, exponente);
-        NodoDoble<T> actual = cabeza;
-        NodoDoble<T> anterior = null;
+        NodoDoble nvoNodo = new NodoDoble(coeficiente, exponente);
+        NodoDoble actual = cabeza;
+        NodoDoble anterior = null;
 
         if (actual == null) {
             cabeza = nvoNodo;
             cola = nvoNodo;
         } else {
 
-            while (actual != null && (actual.getExponente().compareTo(exponente)) < 0) {
+            while (actual != null && actual.getExponente() < exponente) {
                 anterior = actual;
                 actual = actual.getSiguiente();
             }
@@ -93,10 +92,49 @@ public class ListaDoble<T extends Comparable<T>> {
 
     }
 
+    public NodoDoble obtenerCabeza() {
+        return cabeza;
+    }
+
+    public void setCabeza(NodoDoble cabeza) {
+        this.cabeza = cabeza;
+    }
+
+    public NodoDoble unirDosListas(NodoDoble cabeza1, NodoDoble cabeza2) {
+        if (cabeza1 == null)
+            return cabeza2;
+        if (cabeza2 == null)
+            return cabeza1;
+
+        if (cabeza1.getExponente() <= cabeza2.getExponente() ) {
+            cabeza1.setSiguiente(unirDosListas(cabeza1.getSiguiente(), cabeza2));
+            return cabeza1;
+        }else{
+            cabeza2.setSiguiente(unirDosListas(cabeza2.getSiguiente(), cabeza1));
+            return cabeza2;
+        }
+    }
+
+    public NodoDoble sumarDosListas(NodoDoble head){
+        if(head == null || head.getSiguiente() == null)
+            return head;
+
+        head.setSiguiente(sumarDosListas(head.getSiguiente()));
+
+        if(head.getExponente() == head.getSiguiente().getExponente()){
+            int res = head.getCoeficiente() + head.getSiguiente().getCoeficiente();
+            head.getSiguiente().setCoeficiente(res);
+            return head.getSiguiente();
+        }else{
+            return head;
+        }
+
+    }
+
     public void imprimirLista() {
-        NodoDoble<T> temp = cabeza;
+        NodoDoble temp = cabeza;
         while (temp != null) {
-            System.out.println(temp.getCoeficiente() + "x^" + temp.getExponente());
+            System.out.print(temp.getCoeficiente() + "x^" + temp.getExponente() + " + ");
             temp = temp.getSiguiente();
         }
     }

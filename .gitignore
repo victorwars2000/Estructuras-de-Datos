@@ -1,4 +1,2 @@
-/.idea/
-/out/
-*.iml
-
+Ejercicios/.idea/*.xml
+Ejercicios/out/production/Ejercicios/

@@ -36,7 +36,7 @@ public class ListaDoble{
 
     public void agregarEnUnIndice(int indice, int coeficiente, int exponente) {
 
-        if (indice < 1 || indice > numNodos) System.out.println("EL indice fuera de rango");
+        if (indice < 1 || indice > numNodos) System.out.println("Índice fuera de rango");
         else {
             NodoDoble nvoNodo = new NodoDoble(coeficiente, exponente);
             int contador = 1;
@@ -128,15 +128,32 @@ public class ListaDoble{
         }else{
             return head;
         }
+    }
 
+    public NodoDoble multiplicarDosListas(NodoDoble cabeza1 , NodoDoble cabeza2){
+        NodoDoble aux1 = cabeza1;
+        NodoDoble aux2 = cabeza2;
+        ListaDoble lista = new ListaDoble();
+        while (aux1 != null){
+            while (aux2 != null){
+                int coeficiente = aux1.getCoeficiente() * aux2.getCoeficiente();
+                int exponente = aux1.getExponente() + aux2.getExponente();
+                lista.agregarOrdenado(coeficiente, exponente);
+                aux2 = aux2.getSiguiente();
+            }
+            aux2 = cabeza2;
+            aux1 = aux1.getSiguiente();
+        }
+        return lista.obtenerCabeza();
     }
 
     public void imprimirLista() {
         NodoDoble temp = cabeza;
-        while (temp != null) {
-            System.out.print(temp.getCoeficiente() + "x^" + temp.getExponente() + " + ");
+        while (temp.getSiguiente() != null) {
+            System.out.print(temp.getCoeficiente() + "x^" + temp.getExponente()+" + ");
             temp = temp.getSiguiente();
         }
+        System.out.println(temp.getCoeficiente() + "x^"+temp.getExponente());
     }
 
     public int tamanio() {

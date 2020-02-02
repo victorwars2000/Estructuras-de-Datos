@@ -1,5 +1,3 @@
-package ListaEnlazadaSimple;
-
 public class LinkedList {
     private Node head;
     private int size;

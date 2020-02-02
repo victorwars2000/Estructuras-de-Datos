@@ -56,36 +56,4 @@ public class Cola{
         }
         System.out.println("\n");
     }
-
-    //M >= N
-    //{a0, a1, a2, ... , aN}
-    //{a1, a2, ... , aN, a0, a0}
-    //{a3, ..., aN, a1, a1, a2, a2}
-    
-    //Entrada: {Amy, Joe, Luis}, 6
-    /** 
-     *1 { Joe, Luis, Amy, Amy }
-     *2 { Luis, Amy, Amy, Joe, Joe }
-     *3 { Amy, Amy, Joe, Joe, Luis, Luis }
-     *4 { Amy, Joe, Joe, Luis, Luis, Amy, Amy }
-     *5 { Joe, Joe, Luis, Luis, Amy, Amy, Amy, Amy }
-     *6 { Joe, Luis, Luis, Amy, Amy, Amy, Amy, Joe, Joe }
-    */
-    //Salida: Joe
-
-    //descolar
-    //encolar
-    
-
-    public void pocionMagica(int numPociones){
-        
-        while(obtenerTamanio() <= numPociones){
-            
-
-        }
-    }
-
-    
-    
-
 }

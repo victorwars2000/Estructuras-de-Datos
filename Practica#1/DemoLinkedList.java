@@ -1,4 +1,3 @@
-package ListaEnlazadaSimple;
 /*Add elements and remove duplicates
  * INPUT:
  * List1: [1,1,4,5,6,7,7]

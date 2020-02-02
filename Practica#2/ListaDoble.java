@@ -1,5 +1,3 @@
-package ListaDoblementeEnlazada;
-
 public class ListaDoble{
 
     private NodoDoble cabeza;
@@ -115,11 +113,11 @@ public class ListaDoble{
         }
     }
 
-    public NodoDoble sumarDosListas(NodoDoble head){
+    public NodoDoble sumarListas(NodoDoble head){
         if(head == null || head.getSiguiente() == null)
             return head;
 
-        head.setSiguiente(sumarDosListas(head.getSiguiente()));
+        head.setSiguiente(sumarListas(head.getSiguiente()));
 
         if(head.getExponente() == head.getSiguiente().getExponente()){
             int res = head.getCoeficiente() + head.getSiguiente().getCoeficiente();

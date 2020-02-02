@@ -1,5 +1,3 @@
-package ListaDoblementeEnlazada;
-
 public class NodoDoble {
     private int coeficiente;
     private int exponente;

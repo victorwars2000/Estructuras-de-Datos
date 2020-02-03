@@ -1,8 +1,8 @@
-public class NodoCola{
+public class NodoCola {
     private NodoCola anterior;
     private NodoCola siguiente;
-    private Object dato; 
-    
+    private Object dato;
+
     public NodoCola(Object dato){
         this.dato = dato;
     }

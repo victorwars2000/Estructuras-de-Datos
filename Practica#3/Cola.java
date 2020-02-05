@@ -53,6 +53,10 @@ public class Cola {
         return this.frente;
     }
 
+    public void limpiarCola() {
+        frente = null;
+    }
+
     public void imprimirCola() {
         NodoCola temp = ultimo;
         while (temp != null) {
@@ -90,7 +94,8 @@ public class Cola {
         int cont = 0;
         NodoCola ordenI = ordenIdeal.obtenerFrente();
         while (temp != null) {
-            if (temp.getDato() == ordenI.getDato() || compararCola(ordenIdeal.obtenerCadena())) break;
+            if (temp.getDato() == ordenI.getDato() || compararCola(ordenIdeal.obtenerCadena()))
+                break;
             cont++;
             encolar(frente.getDato());
             descolar();

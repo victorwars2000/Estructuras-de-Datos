@@ -1,4 +1,5 @@
 # Ejercicios de Estructuras-de-Datos
+- Lista Enlazada
 - Lista Doblemente Enlazada
-- Lista Enlazada Simple
 - Colas
+- Pilas

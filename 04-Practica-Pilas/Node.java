@@ -1,8 +1,8 @@
-public class Nodo {
+public class Node {
     private int data;
-    private Nodo next;
+    private Node next;
 
-    public Nodo(int data) {
+    public Node(int data) {
         this.data = data;
     }
 
@@ -14,12 +14,11 @@ public class Nodo {
         this.data = data;
     }
 
-    public Nodo getNext() {
+    public Node getNext() {
         return next;
     }
 
-    public void setNext(Nodo next) {
+    public void setNext(Node next) {
         this.next = next;
     }
-
 }

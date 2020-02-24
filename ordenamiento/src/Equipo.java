@@ -1,14 +1,12 @@
-import java.sql.Time;
-
 public class Equipo{
     private String nombre;
-    private int tiempo;
-    private int aproximacion;
+    private long tiempo;
+    private int valorPropuesto;
 
-    public Equipo(String nombre, int tiempo, int aproximacion) {
+    public Equipo(String nombre, long tiempo, int valorPropuesto) {
         this.nombre = nombre;
         this.tiempo = tiempo;
-        this.aproximacion = aproximacion;
+        this.valorPropuesto = valorPropuesto;
     }
 
     public String getNombre() {
@@ -19,29 +17,25 @@ public class Equipo{
         this.nombre = nombre;
     }
 
-    public int getTiempo() {
+    public long getTiempo() {
         return tiempo;
     }
 
-    public void setTiempo(int tiempo) {
+    public void setTiempo(long tiempo) {
         this.tiempo = tiempo;
     }
 
-    public int getAproximacion() {
-        return aproximacion;
+    public int getValorPropuesto() {
+        return valorPropuesto;
     }
 
-    public void setAproximacion(int aproximacion) {
-        this.aproximacion = aproximacion;
+    public void setValorPropuesto(int valorPropuesto) {
+        this.valorPropuesto = valorPropuesto;
     }
 
     @Override
     public String toString() {
-        return "Equipo{" +
-                "nombre='" + nombre + '\'' +
-                ", tiempo=" + tiempo +
-                ", aproximacion=" + aproximacion +
-                '}';
+        return String.format("NOMBRE EQUIPO : %-15s TIEMPO(ms) : %-10s PROPUESTA : %-10s",nombre,tiempo, valorPropuesto);
     }
 }
 

@@ -1,5 +1,5 @@
-public class Sort {
-    public static void selectionSort(Equipo[] array, Ronda ronda){
+public class SelectionSort {
+    public static void sort(Equipo[] array, Ronda ronda){
         int minimo;
         for(int i = 0; i < array.length ; i++ ){
            minimo = i;

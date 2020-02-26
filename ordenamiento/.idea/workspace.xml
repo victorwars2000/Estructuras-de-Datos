@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dfecda9-71cc-4e67-9d62-7bb5eafa62ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Metodos.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Premio.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Principal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Prueba.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Ronda.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Sort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Metodos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Premio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ronda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/estruturas-de-datos/Comparar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/estruturas-de-datos/Equipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Equipo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/estruturas-de-datos/SelectionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/estruturas-de-datos/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/estruturas-de-datos/Metodos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Metodos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/estruturas-de-datos/Prueba.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/estruturas-de-datos/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/estruturas-de-datos/Utilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comparar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Metodos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ronda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,26 +94,30 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1582570672321" />
-    <state width="1320" height="442" key="GridCell.Tab.0.bottom" timestamp="1582587938646">
+    <state x="807" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582592279998">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="442" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582587938646" />
-    <state width="1320" height="442" key="GridCell.Tab.0.center" timestamp="1582587938644">
+    <state x="807" y="154" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1582592279998" />
+    <state width="637" height="471" key="GridCell.Tab.0.bottom" timestamp="1582592281939">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="442" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582587938644" />
-    <state width="1320" height="442" key="GridCell.Tab.0.left" timestamp="1582587938643">
+    <state width="637" height="471" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582592281939" />
+    <state width="637" height="471" key="GridCell.Tab.0.center" timestamp="1582592281937">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="442" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582587938643" />
-    <state width="1320" height="442" key="GridCell.Tab.0.right" timestamp="1582587938645">
+    <state width="637" height="471" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582592281937" />
+    <state width="637" height="471" key="GridCell.Tab.0.left" timestamp="1582592281936">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="442" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582587938645" />
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1582578115051">
+    <state width="637" height="471" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582592281936" />
+    <state width="637" height="471" key="GridCell.Tab.0.right" timestamp="1582592281938">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1582578115051" />
+    <state width="637" height="471" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582592281938" />
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1582591026182">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1582591026182" />
     <state x="0" y="27" width="1356" height="741" key="new project wizard" timestamp="1582552934670">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

@@ -1,7 +1,7 @@
 public class Metodos {
 
     public static void generarRondasAleatorias(){
-        int numeroRondas = Utilities.generarNumeroAleatorio(1,20);
+        int numeroRondas = Utilities.generarNumeroAleatorio(1,15);
         Premio premio = new Premio(Utilities.random());
         for(int i = 0 ; i < numeroRondas; i++){
             System.out.println("\n----------------------------------------------RONDA : "+(i+1)+"------------------------------------------------");
@@ -10,7 +10,7 @@ public class Metodos {
             Ronda ronda = new Ronda(premio,equipos);
             System.out.println("\nEl valor del premio es: "+premio.getPrecio());
 
-            Sort.selectionSort(equipos, ronda);
+            SelectionSort.sort(equipos, ronda);
             System.out.println("El Ganador es: "+ronda.obtenerListaOrdenada()[0]+"\n");
 
             for(Equipo e: ronda.obtenerListaOrdenada())
@@ -26,7 +26,7 @@ public class Metodos {
             Ronda ronda = new Ronda(premio,equipos);
             System.out.println("El valor del premio es: "+premio.getPrecio());
 
-            Sort.selectionSort(equipos, ronda);
+            SelectionSort.sort(equipos, ronda);
             System.out.println("El Ganador es: "+ronda.obtenerListaOrdenada()[0]+"\n");
 
             for(Equipo e: ronda.obtenerListaOrdenada())
@@ -58,7 +58,7 @@ public class Metodos {
     }
 
     public static Equipo pedirDatosAleatorios(){
-        String nombre = Utilities.obtenerNombres(Utilities.random());
+        String nombre = Utilities.letraAleatoria()+Utilities.obtenerNombres(Utilities.random());
         int precioPropuesto = Utilities.random();
         long tiempo = Utilities.randomMilisegundos();
 

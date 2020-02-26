@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Utilities {
@@ -7,6 +8,7 @@ public class Utilities {
     public static final String[] nombreEquipos = {"Wolves", "Horses", "Lions", "Tigers", "Octopus", "Piranha",
             "Crocs", "Boars", "Hams", "Gorillas", "Eagles", "Goats", "Bears", "Cobra", "Phanters",
             "Rhinos", "Deers", "Pitbulls", "Roosters", "Bulls", "Foxes"};
+
     public static int random(){
         return (int)Math.floor(Math.random()*1000 + 1);
     }
@@ -40,8 +42,4 @@ public class Utilities {
         return INTEGER.nextInt();
     }
 
-    public static void clearConsole() {
-        System.out.println("\033[H\033[2J");
-        System.out.flush();
-    }
 }

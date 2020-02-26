@@ -11,7 +11,7 @@ public class Ronda implements Comparator<Equipo> {
     }
 
     public Equipo[] obtenerListaOrdenada(){
-        Sort.selectionSort(equipos,this);
+        SelectionSort.sort(equipos,this);
         return equipos;
     }
 

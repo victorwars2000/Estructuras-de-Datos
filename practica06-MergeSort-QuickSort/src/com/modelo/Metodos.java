@@ -10,7 +10,7 @@ public class Metodos {
             double mediana = calcularMediana(array,dias,low);
             double x = 2*mediana;
             if(x <= array[i]){
-                System.out.println("Mediana: "+ x + "  Gasto del dia: "+array[i]);
+                //System.out.println("Mediana: "+ x + "  Gasto del dia: "+array[i]);
                 contadorFraudes++;
             }
             low++;
